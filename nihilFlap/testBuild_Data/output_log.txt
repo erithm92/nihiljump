@@ -1,0 +1,44 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon(TM) R6 Graphics (ID=0x130d)
+    Vendor:   ATI
+    VRAM:     993 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.082 seconds
+Platform assembly: C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\stevm_000\Documents\nihilFlap\testBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1360x768 60Hz; virtual: 1360x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.145326 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.297335 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 518.
+Total: 0.492437 ms (FindLiveObjects: 0.064427 ms CreateObjectMapping: 0.018466 ms MarkObjects: 0.399694 ms  DeleteObjects: 0.008207 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.191698 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 518.
+Total: 0.439089 ms (FindLiveObjects: 0.056630 ms CreateObjectMapping: 0.018876 ms MarkObjects: 0.354965 ms  DeleteObjects: 0.006976 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.656640 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 518.
+Total: 0.651658 ms (FindLiveObjects: 0.083714 ms CreateObjectMapping: 0.023801 ms MarkObjects: 0.529369 ms  DeleteObjects: 0.012721 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3504 -> priority: 1 
