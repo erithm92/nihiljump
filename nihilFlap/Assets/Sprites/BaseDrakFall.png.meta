@@ -1,13 +1,17 @@
 fileFormatVersion: 2
 guid: f75d0ac1a1166c0419453fb4a03215d7
-timeCreated: 1468990032
+timeCreated: 1469341233
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BaseDrakFall_0
+    21300002: BaseDrakFall_1
+    21300004: BaseDrakFall_2
+    21300006: BaseDrakFall_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,8 +33,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +42,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +53,90 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: BaseDrakFall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 40}
+        - {x: -36, y: 23}
+        - {x: -36, y: -17}
+        - {x: -35, y: -18}
+        - {x: -23, y: -27}
+        - {x: -10, y: -33}
+        - {x: 13, y: -33}
+        - {x: 28, y: -17}
+        - {x: 28, y: 27}
+        - {x: 10, y: 40}
+    - name: BaseDrakFall_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: -17}
+        - {x: -12, y: -33}
+        - {x: 28, y: -33}
+        - {x: 28, y: 32}
+        - {x: 25, y: 44}
+        - {x: -20, y: 44}
+        - {x: -36, y: 14}
+    - name: BaseDrakFall_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 45}
+        - {x: -13, y: 44}
+        - {x: -35, y: 4}
+        - {x: -35, y: -19}
+        - {x: -25, y: -29}
+        - {x: -2, y: -33}
+        - {x: 20, y: -33}
+        - {x: 28, y: -17}
+        - {x: 28, y: 23}
+        - {x: -2, y: 45}
+    - name: BaseDrakFall_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 43}
+        - {x: -17, y: 42}
+        - {x: -13, y: 30}
+        - {x: -36, y: 13}
+        - {x: -36, y: -17}
+        - {x: -24, y: -24}
+        - {x: -5, y: -33}
+        - {x: 9, y: -33}
+        - {x: 12, y: -30}
+        - {x: 28, y: -15}
+        - {x: 28, y: 26}
+        - {x: -4, y: 43}
     outline: []
   spritePackingTag: 
   userData: 

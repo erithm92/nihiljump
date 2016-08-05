@@ -37,13 +37,22 @@ public class ColumnFill : MonoBehaviour
         wide = randomBool();
         verticalOffset = Random.Range(low, high);
         enemyOffset = Random.Range(1.5f, 3);
-        transform.position += new Vector3(0, verticalOffset, 0);
+        
         if (top)
+        {
+            if (!bottom)
+                verticalOffset -= 1;
             FillTop();
+        }
         if (bottom)
+        {
+            if (!top)
+                verticalOffset += 1;
             FillBot();
+        }
+        transform.position += new Vector3(0, verticalOffset, 0);
 
-	}
+    }
 	void Update()
     {
         if (transform.position.x < -4)
@@ -58,7 +67,17 @@ public class ColumnFill : MonoBehaviour
         GameObject toSpawn = RandomSelectObstacle();
         GameObject top = Instantiate(toSpawn,transform.position + topPos, transform.rotation) as GameObject;
         if (toSpawn == enemy)
+        {
             top.transform.position += new Vector3(0, -enemyOffset, 0);
+            bool random = randomBool();
+            if (random)
+            {
+                GameObject top2 = Instantiate(toSpawn, top.transform.position + Vector3.down / 2, transform.rotation) as GameObject;
+                top2.transform.parent = gameObject.transform;
+                if (wide)
+                    top2.transform.position += new Vector3(0, .05f, 0);
+            }
+        }
         else
             top.GetComponent<SpriteRenderer>().flipY = true;
        
@@ -71,7 +90,17 @@ public class ColumnFill : MonoBehaviour
         GameObject toSpawn = RandomSelectObstacle();
         GameObject bot = Instantiate(toSpawn, transform.position + bottomPos, transform.rotation) as GameObject;
         if (toSpawn == enemy)
+        {
             bot.transform.position += new Vector3(0, enemyOffset, 0);
+            bool random = randomBool();
+            if(random)
+            {
+                GameObject bot2 = Instantiate(toSpawn, bot.transform.position + Vector3.up/2, transform.rotation) as GameObject;
+                bot2.transform.parent = gameObject.transform;
+                if (wide)
+                    bot2.transform.position += new Vector3(0, -.05f, 0);
+            }
+        }
         bot.transform.parent = gameObject.transform;
         if (wide)
             bot.transform.position += new Vector3(0, -.05f, 0);

@@ -5,38 +5,46 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject level;
-    public GameObject mainMenu;
-    public GameObject score;
-    #region quotes
-    string[] quotes = {"When one stares into the void\nThe void stares back\n-Abraham Lincoln",
-        "Philosophy's hard\n -Fredrick Nietzsche",
-        "But it's not fair\n -The Nihilists",
-        "everything is possible\nnothing has any importance\n -Albert Camus"
-
-    };
-    #endregion
+    static GameObject instance;
+    public GameObject scoreObject;
+    public int totalBlood, levelToLoad, score;
+    
+    void Awake()
+    {
+        if (instance == null)
+            instance = gameObject;
+        else
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+        if (PlayerPrefs.HasKey("TOTALBLOOD"))
+            totalBlood = PlayerPrefs.GetInt("TOTALBLOOD");
+        else
+            totalBlood = 0;
+        if (PlayerPrefs.HasKey("LEVELSELECTION"))
+            levelToLoad = PlayerPrefs.GetInt("LEVELSELECTION");
+        else
+        {
+            levelToLoad = 1;
+            PlayerPrefs.SetInt("LEVELSELECTION", levelToLoad);
+        }
+    }
 
     public void LoadLevel()
     {
-        level.SetActive(true);
-        mainMenu.SetActive(false);
+        SceneManager.LoadScene(levelToLoad);
     }
-    public void ManMenu()
+    public void MainMenu()
     {
-        level.SetActive(false);
-        mainMenu.SetActive(true);
+        SceneManager.LoadScene(0);
     }
     public void QuitGame()
     {
         Application.Quit();
     }
-    public void Reload()
+    public int CalcLevelScore()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    public void PickQuote()
-    {
-        score.GetComponent<Text>().text = quotes[Random.Range(0, quotes.Length-1)];
+        return totalBlood - score;
     }
 }

@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: 86a8e0ed32ee9b34eba34f34440e2819
+timeCreated: 1469333099
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DrakShotFly_0
+    21300002: DrakShotFly_1
+    21300004: DrakShotFly_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DrakShotFly_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -3}
+        - {x: -8, y: -9}
+        - {x: 8, y: -9}
+        - {x: 13, y: -7}
+        - {x: 13, y: 5}
+        - {x: 8, y: 9}
+        - {x: -1, y: 9}
+        - {x: -15, y: 5}
+    - name: DrakShotFly_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 9}
+        - {x: -7, y: 9}
+        - {x: -14, y: 7}
+        - {x: -14, y: -7}
+        - {x: -6, y: -9}
+        - {x: 11, y: -9}
+        - {x: 13, y: -5}
+        - {x: 13, y: 5}
+    - name: DrakShotFly_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 9}
+        - {x: -6, y: 9}
+        - {x: -11, y: 8}
+        - {x: -15, y: 5}
+        - {x: -15, y: -2}
+        - {x: -8, y: -9}
+        - {x: 7, y: -9}
+        - {x: 13, y: -4}
+        - {x: 13, y: 5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
