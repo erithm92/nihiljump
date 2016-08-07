@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim.GetComponent<Animator>();
+        Invoke("Activate", 1);
 	}
 	
 	// Update is called once per frame
@@ -52,4 +53,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 	}
+    void Activate()
+    {
+        rb.WakeUp();
+    }
 }

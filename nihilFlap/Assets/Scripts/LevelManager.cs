@@ -4,10 +4,15 @@ using System.Collections;
 public class LevelManager : MonoBehaviour {
 
     public GameObject player, obstacleSpawner;
+    GameObject gameManager;
+    GameManager gm;
     bool timeSlowed;
 	// Use this for initialization
 	void Start ()
     {
+        gameManager = GameObject.Find("GameManager");
+        gm = gameManager.GetComponent<GameManager>();
+        gm.levelManager = this.gameObject;
         if (player != null)
             player.GetComponent<PlayerController>().levelManager = gameObject;
         else
@@ -20,12 +25,11 @@ public class LevelManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
 
     }
     public void PlayerDeath()
     {
+        player.GetComponent<PlayerController>().alive = false;
         if (obstacleSpawner != null)
             obstacleSpawner.GetComponent<ObstacleSpawner>().canSpawn = false;
         else

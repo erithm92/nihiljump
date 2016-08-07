@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     static GameObject instance;
     public GameObject scoreObject;
+    public GameObject levelManager;
     public int totalBlood, levelToLoad, score;
     
     void Awake()
@@ -18,6 +19,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+       
+    }
+    void Start()
+    {
         if (PlayerPrefs.HasKey("TOTALBLOOD"))
             totalBlood = PlayerPrefs.GetInt("TOTALBLOOD");
         else
@@ -28,6 +33,16 @@ public class GameManager : MonoBehaviour
         {
             levelToLoad = 1;
             PlayerPrefs.SetInt("LEVELSELECTION", levelToLoad);
+        }
+        Debug.Log(PlayerPrefs.GetInt("TOTALBLOOD"));
+        PlayerPrefs.Save();
+    }
+    void Update()
+    {
+        if (scoreObject != null)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+                scoreObject.GetComponent<LevelScore>().score -= 5;
         }
     }
 
@@ -43,8 +58,11 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public int CalcLevelScore()
+    public void PlayerDeath()
     {
-        return totalBlood - score;
+        levelManager.GetComponent<LevelManager>().PlayerDeath();
+        SceneManager.LoadScene(0);
+        instance = null;
+        Destroy(gameObject);
     }
 }

@@ -12,7 +12,7 @@ public class MenuManager : MonoBehaviour
         blood = 0;
         if (PlayerPrefs.HasKey("TOTALBLOOD"))
             blood = PlayerPrefs.GetInt("TOTALBLOOD");
-        bloodCount.GetComponent<Text>().text += " " + blood;
+        bloodCount.GetComponent<Text>().text += "" + blood;
     }
     public void SwitchMain()
     {
